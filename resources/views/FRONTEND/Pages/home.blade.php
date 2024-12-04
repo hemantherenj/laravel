@@ -1,12 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Home Page</h1>
-</body>
-</html>
+@extends('FRONTEND.master')
+@section('content')
+    <!-- carousel -->
+    @include('FRONTEND.Components.carousel', ['title' => 'Profile', 'subtitle' => 'User Profile'])
+    <!-- /carousel -->
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://blissfulplans.com/wp-content/uploads/2020/06/christian-wedding.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://blissfulplans.com/wp-content/uploads/2020/06/christian-wedding.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+@endsection
